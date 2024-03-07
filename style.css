@@ -39,3 +39,29 @@
 .imgBox:nth-child(1){
     margin-left: 0;
 }
+
+/* 테스트2 */
+
+ul li{
+    padding-left: 0;
+    list-style: none;
+}
+
+.winBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    width: 750px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.slide{
+    width: 900px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    left: 0px;
+}
