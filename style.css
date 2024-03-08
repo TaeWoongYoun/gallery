@@ -74,22 +74,57 @@ button{
 
 /* 테스트3 */
 
-.window{
-    width: 1200px;
+.window {
+    width: 1000px;
     height: 300px;
+    overflow: hidden;
 }
 
-.slide{
-    position: relative;
-    width: 3600px;
+.slide {
+    width: 3000px;
     height: 300px;
     display: flex;
+    transition: transform 0.5s ease-in-out; /* 추가: 슬라이드 전환에 애니메이션 효과 추가 */
 }
 
-.slide li{
-    width: 1200px;
+.slide li {
+    position: relative;
+    width: 1000px;
     height: 300px;
 }
 
+.slide label {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    border: 2px solid black;
+    font-weight: 900;
+    text-align: center;
+    line-height: 25px;
+}
 
+.left {
+    display: block;
+    left: 30px;
+}
+
+.right {
+    right: 30px;
+}
+
+#slide01:checked ~ .window .slide {
+    transform: translateX(0);
+}
+
+#slide02:checked ~ .window .slide {
+    transform: translateX(-1000px);
+}
+
+#slide03:checked ~ .window .slide {
+    transform: translateX(-2000px);
+}
 
