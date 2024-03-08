@@ -73,3 +73,23 @@ button{
 } */
 
 /* 테스트3 */
+
+.window{
+    width: 1200px;
+    height: 300px;
+}
+
+.slide{
+    position: relative;
+    width: 3600px;
+    height: 300px;
+    display: flex;
+}
+
+.slide li{
+    width: 1200px;
+    height: 300px;
+}
+
+
+
