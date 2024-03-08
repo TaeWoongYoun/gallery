@@ -73,31 +73,33 @@ button{
 } */
 
 /* 테스트3 */
-
 .window {
+    border: 2px solid black;
     width: 1000px;
-    height: 300px;
+    height: 200px;
     overflow: hidden;
+    position: relative;
 }
 
 .slide {
-    width: 3000px;
-    height: 300px;
+    position: relative;
+    width: 1200px;
+    height: 200px;
     display: flex;
-    transition: transform 0.5s ease-in-out; /* 추가: 슬라이드 전환에 애니메이션 효과 추가 */
+    left: 400px;
+    transition: left 0.5s ease-in-out;
 }
 
 .slide li {
     position: relative;
-    width: 1000px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 
-.slide label {
+.left,
+.right {
     position: absolute;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 0;
     cursor: pointer;
     width: 40px;
     height: 30px;
@@ -108,23 +110,34 @@ button{
 }
 
 .left {
-    display: block;
-    left: 30px;
+    left: 0px;
 }
 
 .right {
-    right: 30px;
+    right: 0px;
 }
 
 #slide01:checked ~ .window .slide {
-    transform: translateX(0);
+    left: 400px;
 }
 
 #slide02:checked ~ .window .slide {
-    transform: translateX(-1000px);
+    left: 200px;
 }
 
 #slide03:checked ~ .window .slide {
-    transform: translateX(-2000px);
+    left: 0px;
+}
+
+#slide04:checked ~ .window .slide {
+    left: -200px;
+}
+
+#slide05:checked ~ .window .slide {
+    left: -400px;
+}
+
+#slide06:checked ~ .window .slide {
+    left: -600px;
 }
 
