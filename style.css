@@ -47,7 +47,7 @@ ul li{
     list-style: none;
 }
 
-.winBox{
+/* .winBox{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -65,3 +65,10 @@ ul li{
     position: relative;
     left: 0px;
 }
+
+button{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 900;
+} */
